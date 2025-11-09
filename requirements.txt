@@ -6,10 +6,10 @@ scikit-learn==1.5.2
 python-dotenv==1.0.1
 
 # Built-ins (don’t install, added only because you asked)
-sqlite3
-hashlib
-json
-datetime
-re
-traceback
-os
+# sqlite3
+# hashlib
+# json
+# datetime
+# re
+# traceback
+# os
