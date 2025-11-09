@@ -1,0 +1,15 @@
+Flask==3.0.3
+Flask-Cors==4.0.1
+requests==2.32.3
+nltk==3.9.1
+scikit-learn==1.5.2
+python-dotenv==1.0.1
+
+# Built-ins (don’t install, added only because you asked)
+sqlite3
+hashlib
+json
+datetime
+re
+traceback
+os
