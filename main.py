@@ -416,6 +416,10 @@ def update_usage():
 def health():
     return jsonify({'status': 'ok', 'message': 'TruthFort API is running'})
 
+@app.route('/favicon.png')
+def favicon():
+    return send_from_directory('.', 'favicon.png', mimetype='image/png')
+
 if __name__ == '__main__':
     reset_daily_usage()
     print("TruthFort Server Starting...")
@@ -423,4 +427,5 @@ if __name__ == '__main__':
     print("Server running on http://localhost:8000")
     print("Home page: http://localhost:8000")
     print("Main app: http://localhost:8000/index.html")
+
     app.run(debug=True, port=8000, host='0.0.0.0')
