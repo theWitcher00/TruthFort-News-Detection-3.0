@@ -327,11 +327,14 @@
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
             
-            fetch('http://localhost:8000/login', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, password })
-            })
+            #fetch('http://localhost:8000/login', {
+             #   method: 'POST',
+              #  headers: { 'Content-Type': 'application/json' },
+               # body: JSON.stringify({ email, password })
+            #})
+            
+            fetch('/login', { ... })
+                
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
@@ -354,11 +357,14 @@
             const email = document.getElementById('regEmail').value;
             const password = document.getElementById('regPassword').value;
             
-            fetch('http://localhost:8000/register', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, email, password })
-            })
+            #fetch('http://localhost:8000/register', {
+             #   method: 'POST',
+              #  headers: { 'Content-Type': 'application/json' },
+               # body: JSON.stringify({ name, email, password })
+            #})
+
+            fetch('/register', { ... })
+            
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
@@ -418,4 +424,5 @@
         };
     </script>
 </body>
+
 </html>
